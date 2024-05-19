@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper swiper-galery">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="swiper__container">
+                    <div class="swiper__image">
+                        <img src="img/slide-1.jpg" alt="">
+                    </div>
+                    <button class="delete-slide"></button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper__container">
+                    <div class="swiper__image">
+                        <img src="img/slide-2.jpg" alt="">
+                    </div>                    
+                    <button class="delete-slide"></button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper__container">
+                    <div class="swiper__image">
+                        <img src="img/slide-3.jpg" alt="">
+                    </div>          
+                    <button class="delete-slide"></button>
+                </div>
+            </div>
+            <div class="swiper-slide slide-adder">
+                <button class="upload-btn"></button>
+                <input type="file" id="upload-input" style="display: none;">
+                <div class="drop-zone"></div>
+            </div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+                <svg width="800px" height="800px" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 18L6.5 12.5L12 7M6.5 12.5H19" stroke="#121923" stroke-width="1.2"/>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg width="800px" height="800px" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 7L18.5 12.5L13 18M18.5 12.5H6" stroke="#121923" stroke-width="1.2"/>
+                </svg>
+            </div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <main class="main">
+            <div class="main__row">
+                <div class="vertical">
+                    <div class="swiper swiper-vertical">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide vertical-slide">
+                                <p class="vertical-slide__text">1950-е годы: Первые эксперименты с компьютерной графикой начались с использования осциллографов и электронных лучевых трубок (CRT). Айвен Сазерленд разработал систему "Sketchpad" в 1963 году, которая позволяла пользователям рисовать на экране компьютера с помощью светового пера.</p>
+                            </div>
+                            <div class="swiper-slide vertical-slide">Slide 2</div>
+                            <div class="swiper-slide vertical-slide">Slide 3</div>
+                            <div class="swiper-slide vertical-slide">Slide 4</div>
+                            <div class="swiper-slide vertical-slide">Slide 5</div>
+                            <div class="swiper-slide vertical-slide">Slide 6</div>
+                            <div class="swiper-slide vertical-slide">Slide 7</div>
+                            <div class="swiper-slide vertical-slide">Slide 8</div>
+                            <div class="swiper-slide vertical-slide">Slide 9</div>
+                            <div class="swiper-slide vertical-slide">Slide 10</div>
+                        </div>
+                        
+                        <!-- If we need scrollbar -->
+                    </div>
+                </div>
+                <div class="flip-cards">
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__item card-front">
+                                <p class="card__text">
+                                    В <span class="text-date">1826</span> году французский изобретатель Жозеф Нисефор Ньепс сделал первую постоянную фотографию. Он использовал процесс, называемый гелиографией, и экспонировал вид из окна своей мастерской в течение восьми часов на оловянную пластину, покрытую битумом.                            
+                                </p>
+                            </div>
+                            <div class="card__item card-back">
+                                <img class="card__img" src="/img/card-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__item card-front">
+                                <p class="card__text">
+                                    В <span class="text-date">1957</span> году Рассел Кирш и его команда в Национальном институте стандартов и технологий (NIST) создали первый цифровой сканер. Они оцифровали фотографию сына Кирша, получив первое цифровое изображение, состоящее из 176 на 176 пикселей.                            
+                                </p>
+                            </div>
+                            <div class="card__item card-back">
+                                <img class="card__img" src="/img/card-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__item card-front">
+                                <p class="card__text">
+                                    В <span class="text-date">1963</span> году Иван Сазерленд разработал программу Sketchpad, которая считается одной из первых графических программ. Sketchpad позволял пользователям рисовать на экране компьютера с помощью светового пера, что стало значительным прорывом в развитии интерактивной компьютерной графики.                            
+                                </p>
+                            </div>
+                            <div class="card__item card-back">
+                                <img class="card__img" src="/img/card-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__item card-front">
+                                <p class="card__text">
+                                    В <span class="text-date">1995</span> году компания Pixar выпустила "Историю игрушек" — первый полнометражный фильм, созданный полностью с помощью компьютерной графики. Этот фильм стал поворотным моментом в индустрии анимации и открыл новую эру в производстве анимационных фильмов.                            
+                                </p>
+                            </div>
+                            <div class="card__item card-back">
+                                <img class="card__img" src="/img/card-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-creator">
+                        <div class="creator">
+                            <h2 class="creator__label">вы знаете ещё какие-нибудь интересные факты о фото или компьютерной графике? <span class="creator__label-text">расскажите нам о них!</span></h2>
+                            <input class="creator__text" type="text" id="cardText" placeholder="введите текст">
+                            <div class="upload-btn-wrapper">
+                                <button class="creator__image-button"></button>
+                                <input class="creator__image" type="file" id="cardImage" accept="image/*">
+                            </div>
+                            <button class="creator__button" onclick="createCard()">добавить карточку</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
