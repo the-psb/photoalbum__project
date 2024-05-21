@@ -123,10 +123,54 @@
 }
 
 .swiper-vertical {
-  display: flex;
-  height: 600px;
+  max-height: 794px;
   width: 500px;
+  padding: 15px;
   border: 2px solid #000;
+  background: #000;
+}
+
+.vertical__text {
+  height: 100%;
+  width: 50%;
+  color: #fff;
+  margin-left: 50%;
+}
+
+.vertical-pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 55px;
+}
+
+.vertical-pagination .swiper-pagination-bullet {
+  position: relative;
+  width: 200px;
+  padding-left: 45px;
+  align-items: center;
+  text-align: left;
+  font-family: Ubuntu;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent !important;
+  transition: 0.3s;
+}
+
+.vertical-pagination .swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  height: 8px;
+  width: 8px;
+  background: #fff;
+}
+
+.vertical-pagination .swiper-pagination-bullet:hover {
+  scale: 1.05;
 }
 
 .flip-cards {

@@ -11,13 +11,21 @@ document.addEventListener('DOMContentLoaded', function () {
           clickable: true,
       },
   });
+  var menu = ['1950-е годы: Начало компьютерной графики', '1963: "Sketchpad" Айвена Сазерленда', '1972: Игра "Pong"', '1982: Фильм "Трон"', '1984: Система "RenderMan"', '1993: Игра "Doom"', '1995: "История игрушек" (Toy Story)', '1999: "Матрица" и эффект "bullet time"', '2009: Фильм "Аватар"', '2020-е: Реалистичная графика в реальном времени']
   var swiperVertical = new Swiper('.swiper-vertical', {
-    // Optional parameters
     direction: 'vertical',
     loop: false,
-    // slidesPerView: 1,
     spaceBetween: 10,
-    mousewheel: true,
+    pagination: {
+        el: '.vertical-pagination',
+        clickable: true,
+        renderBullet: function(index, className) {
+            return '\
+              <div class="box ' + className + '">\
+              <div class="text">' + (menu[index]) + '</div>\
+              </div>';
+          },
+    },
   });
 
   document.querySelector('.upload-btn').addEventListener('click', function () {
